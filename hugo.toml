@@ -1,0 +1,47 @@
+baseURL = "https://Anwenya.github.io/blog/"
+languageCode = "zh-cn"
+title = "wuliuqi's Blog"
+theme = "PaperMod"
+
+[params]
+env = "production"
+ShowReadingTime = true
+ShowCodeCopyButtons = true
+ShowBreadCrumbs = true
+ShowPostNavLinks = true
+ShowToc = true
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+pygmentsUseClasses = true
+
+[pagination]
+disableAliases = true
+pageSize = 5
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[menu]
+[[menu.main]]
+name = "首页"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "归档"
+url = "/archives/"
+weight = 2
+
+[[menu.main]]
+name = "搜索"
+url = "/search/"
+weight = 3
+
+[[menu.main]]
+name = "标签"
+url = "/tags/"
+weight = 3
