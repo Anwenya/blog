@@ -3,6 +3,17 @@ name: Deploy Hugo blog
 on:
   push:
     branches: [main]
+  workflow_dispatch:
+    # manual run
+    inputs:
+      hugoVersion:
+        description: "Hugo Version"
+        required: false
+        default: "0.146.0"
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 defaults:
   run:
